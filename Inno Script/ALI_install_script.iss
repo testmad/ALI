@@ -25,14 +25,14 @@ AppPublisherURL={#BaseAppURL}
 DefaultDirName={pf}\{#BaseAppName}
 DefaultGroupName={#BaseAppName}
 AllowNoIcons=yes
-LicenseFile=C:\Users\testmad\Desktop\installer\license.txt
-OutputDir=C:\Users\testmad\Desktop
-OutputBaseFilename=setup
-SetupIconFile=C:\Users\testmad\Desktop\ALI_ls.ico
+LicenseFile=C:\Users\testmad\Desktop\ALI\Installer\LS\license.txt
+OutputDir=C:\Users\testmad\Desktop\ALI\bin
+OutputBaseFilename=LiteStep_{#BaseAppVersion}_Setup
+SetupIconFile=C:\Users\testmad\Desktop\ALI\Installer\ALI_ls.ico
 Compression=lzma
 SolidCompression=yes
-WizardImageFile=C:\Users\testmad\Desktop\Untitled-1.bmp
-WizardSmallImageFile=C:\Users\testmad\Desktop\237_11744584849_1533_n.bmp
+WizardImageFile=C:\Users\testmad\Desktop\ALI\Installer\Untitled-1.bmp
+WizardSmallImageFile=C:\Users\testmad\Desktop\ALI\Installer\237_11744584849_1533_n.bmp
 UninstallDisplayIcon={app}\ALI\ALI_ls.ico
 ChangesAssociations=True
 
@@ -49,7 +49,7 @@ Name: "{userdesktop}\Set LiteStep as Shell"; Filename: "{app}\utilities\wxlua.ex
 
 [Messages]
 SetupAppTitle={#InstallerTitle}
-SetupWindowTitle={#InstallerWindowTitle} {#InstallerVersion} by {#InstallerPublisher}
+SetupWindowTitle={#InstallerWindowTitle} {#InstallerVersion}
 
 [Dirs]
 Name: "{app}\ALI"
@@ -67,68 +67,67 @@ Name: "{app}\Profiles\{username}\themes"
 Name: "{app}\Profiles\{username}\themes\InstDef"
 
 [Files]
-Source: "C:\Users\testmad\Desktop\installer\changes.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\hook.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\libpng13.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\license.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\litestep.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\lsapi.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\manual.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\readme.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\step.rc"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\xPaintClass-1.0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\zlib1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\doc2.css"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\install.txt"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\msvcr71.dll"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\NetLoadModule.ini"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\NetLoadModule2.dll"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\NLM\NetLoadModule2.html"; DestDir: "{app}\NLM"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\LOEC.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\LOSS.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\lua5.1.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\lua51.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\rcparser.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\SLI-ModuleManager.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\SLI-OnlineModuleList.old"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\SLI-OnlineModuleList.txt"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\SLI-ThemeManager.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\SLI-ThemeManager.txt"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\winreg.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\installer\utilities\wxlua.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\evars.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\hotkey.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\personal.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\popup.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\jkey\vk104.txt"; DestDir: "{app}\Profiles\{username}\personal\jkey"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\lsxcommand\engines.list"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\lsxcommand\history.ini"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\lsxcommand\old.engines.list"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\rainlendar\rainlendar.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\rainlendar\languages\English.example"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\rainlendar\languages\French.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\rainlendar\languages\German.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\personal\rainlendar\languages\Russian.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\themes\themeselect.rc"; DestDir: "{app}\Profiles\{username}\themes"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\themes\themeslist.rc"; DestDir: "{app}\Profiles\{username}\themes"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\testmad\themes\InstDef\theme.rc"; DestDir: "{app}\Profiles\{username}\themes\InstDef"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\gsz.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\GSZBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\GSZBox2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\GSZDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\GSZDoc2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\LSBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\LSDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\lsz.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\LSZBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\LSZDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\rc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\rc2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\RCBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\RCDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\SetShellExplorer.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\losi-LOSI0.4.5\LS\losi\SetShellLS.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
-Source: "C:\Users\testmad\Desktop\ALI_ls.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\changes.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\hook.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\libpng13.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\license.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\litestep.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\lsapi.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\manual.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\step.rc"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\xPaintClass-1.0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\LS\zlib1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\doc2.css"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\install.txt"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\msvcr71.dll"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\NetLoadModule.ini"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\NetLoadModule2.dll"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\NLM\NetLoadModule2.html"; DestDir: "{app}\NLM"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\LOEC.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\LOSS.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\lua5.1.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\lua51.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\rcparser.lua"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\SLI-ModuleManager.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\SLI-OnlineModuleList.old"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\SLI-OnlineModuleList.txt"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\SLI-ThemeManager.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\SLI-ThemeManager.txt"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\winreg.dll"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\utilities\wxlua.exe"; DestDir: "{app}\utilities"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\evars.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\hotkey.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\personal.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\popup.rc"; DestDir: "{app}\Profiles\{username}\personal"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\jkey\vk104.txt"; DestDir: "{app}\Profiles\{username}\personal\jkey"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\lsxcommand\engines.list"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\lsxcommand\history.ini"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\lsxcommand\old.engines.list"; DestDir: "{app}\Profiles\{username}\personal\lsxcommand"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\rainlendar\rainlendar.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\rainlendar\languages\English.example"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\rainlendar\languages\French.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\rainlendar\languages\German.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\personal\rainlendar\languages\Russian.ini"; DestDir: "{app}\Profiles\{username}\personal\rainlendar\languages"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\themes\themeselect.rc"; DestDir: "{app}\Profiles\{username}\themes"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\themes\themeslist.rc"; DestDir: "{app}\Profiles\{username}\themes"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\themes\InstDef\theme.rc"; DestDir: "{app}\Profiles\{username}\themes\InstDef"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\gsz.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\GSZBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\GSZBox2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\GSZDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\GSZDoc2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\LSBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\LSDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\lsz.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\LSZBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\LSZDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\rc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\rc2.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\RCBox.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\RCDoc.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\SetShellExplorer.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\SetShellLS.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI_ls.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
 
 [Registry]
 Root: "HKLM"; Subkey: "Software\LOSI"; ValueType: none; Flags: uninsdeletekey
