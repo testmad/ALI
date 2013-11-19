@@ -1,0 +1,102 @@
+; search engine list file for LSXCommand
+; last updated December 2007 by moshi
+
+Default Google
+
+
+
+"Search Engines" {
+		Google              	http://www.google.com/search?q=<args>
+		Yahoo               	http://search.yahoo.com/bin/search?p=<args>
+		Live					http://search.live.com/results.aspx?q=<args>
+		Ask					http://www.ask.com/web?q=<args>
+		Mahalo				http://www.mahalo.com/<args>
+		Exalead				http://www.exalead.com/search/results?q=<args>
+}
+
+
+
+"Social Tagging" {
+		del.icio.us			http://del.icio.us/search/?fr=del_icio_us&p=<args>&type=all
+		Digg					http://digg.com/search?section=all&s=<args>
+		Furl					http://www.furl.net/search?enc=UTF-8&chn=front&keyword=<args>&x=0&y=0
+		Reddit				http://reddit.com/search?q=<args>
+		Ma.gnolia				http://ma.gnolia.com/tags/<args>
+		Clipmarks				http://clipmarks.com/search/<args>
+}
+
+
+
+"Encyclopedia" {
+		Wikipedia				http://en.wikipedia.org/wiki/Special:Search?search=<args>&go=Go
+		Britannica			http://www.britannica.com/search?query=<args>&ct=&searchSubmit.x=6&searchSubmit.y=10
+		Encarta				http://encarta.msn.com/encnet/refpages/search.aspx?q=<args>
+		Columbia				http://www.bartleby.com/cgi-bin/texis/webinator/sitesearch?FILTER=col65&query=<args>
+}
+
+
+
+"Dictionary && Thesaurus" {
+		Merriam-Webster         	http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&va=<args>
+		Wordsmyth				http://www.wordsmyth.net/live/home.php?script=search&matchent=<args>
+		Wiktionary			http://en.wiktionary.org/wiki/Special:Search?search=<args>&go=Go
+		WordWeb				http://www.wordwebonline.com/search.pl?w=<args>
+		VisualThesaurus		http://www.visualthesaurus.com/?word=<args>
+}
+
+
+
+
+
+
+
+"Pictures" {
+		flickr				http://www.flickr.com/search/?q=<args>
+		Photobucket			http://photobucket.com/images/<args>
+		GoogleImages			http://images.google.com/images?q=<args>
+		OpenClipArtLibrary		http://openclipart.org/media/tags/<args>
+		Fotolia				http://www.fotolia.com/search?k=<args>&order=relevance&search.x=0&search.y=0
+}
+
+
+
+"Music" {
+		Last.fm				http://www.last.fm/music/?q=<args>
+		Pandora				http://www.pandora.com/backstage?type=all&q=<args>
+		SHOUTcast				http://www.shoutcast.com/directory/?sgenre=&maxbitrate=999&numresult=25&s=<args>
+}
+
+
+
+"Videos" {
+		YouTube				http://www.youtube.com/results?search_query=<args>&search=Search
+		Dailymotion			http://www.dailymotion.com/videos/relevance/search/<args>
+		Truveo				http://www.truveo.com/search.php?query=<args>
+		metacafe				http://www.metacafe.com/tags/<args>
+}
+
+
+
+"Shopping" {
+		eBay					http://search.ebay.com/<args>
+		Oodle				http://www.oodle.com/browse/?q=<args>
+		Amazon				http://www.amazon.com/exec/obidos/external-search/?keyword=<args>
+		GoogleProductSearch		http://www.google.com/products?q=<args>&btnG=Search+Products&hl=en
+}
+
+
+"Maps && Travel" {
+		GoogleMaps			http://maps.google.com/maps?q=<args>
+		WeatherBonk			http://weatherbonk.com/weather/summary.jsp?where=<args>&_id=&_className=weathermaps.weather.user.WeatherRequest
+		gusto!				http://www.gusto.com/search?query=<args>
+		Plazes				http://www.plazes.com/search;plazes?q=<args>
+}
+
+
+
+"Miscellanous" {
+		IMDb					http://www.imdb.com/find?s=all&q=<args>
+		Technorati			http://www.technorati.com/search/<args>?authority=a4
+		Slashdot			http://slashdot.org/search.pl?query=<args>
+		Medstory				http://www.medstory.com/app?service=external&page=Search&c=true&s=Web&tc=h1&q=<args>
+}

@@ -1,0 +1,24 @@
+;------------------------------------------------------------------------------
+;    Edit *only* the paths as needed, and leave the file's *FORMAT* unchanged
+;------------------------------------------------------------------------------
+FileManager    "C:\WINDOWS\Explorer.exe"
+TxtEditor      "C:\WINDOWS\system32\NOTEPAD.EXE"
+CmdPrompt      "C:\WINDOWS\system32\cmd.exe"
+AudioPlayer    "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"
+MediaPlayer    "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"
+GfxViewer      "C:\WINDOWS\System32\rundll32.exe"
+GfxEditor      "G:\Adobe\Adobe Photoshop CS5 (64 Bit)\Photoshop.exe"
+Browser        "C:\Program Files (x86)\QupZilla\qupzilla.exe"
+DUN            "..."
+Email          "C:\WINDOWS\system32\rundll32.exe"
+IRC            "C:\Program Files\HexChat\hexchat.exe"
+FTP            "C:\Program Files (x86)\QupZilla\qupzilla.exe"
+IM             "..."
+
+
+
+;------------------------------------------------------------------------------
+;    Add and define any additional evars you require
+;------------------------------------------------------------------------------
+
+;MiscApp       "C:\C:\Program Files (x86)\misc\app.exe
