@@ -1,0 +1,20 @@
+
+These instructions assume you have a working installation of LiteStep that already uses NetLoadModule.  If you don't have that, you will have to look elsewhere for instructions.
+
+----------
+
+1. Make sure you have proper permissions to write to the folder containing litestep.exe and to overwrite existing NetLoadModule files.  If you installed LiteStep from an administrative account, you may have to log back into that account to update NetLoadModule.  
+
+2. Have all of the files in this archive handy.  If you're not sure, extract them somewhere and have a window open to that folder.
+
+3. Open a file manager window to the folder containing litestep.exe.  If you have a command box, you can probably just enter $litestepdir$ into that.  If NetLoadModule is not nearby, you may want to have a window open to that as well.
+
+4. Close LiteStep if it is running.  Ctrl-Alt-F1, Q.
+
+5. Copy "msvcr71.dll" from the archive to the folder containing litestep.exe.  If there is already such a file *and* its "Last Modified" date is newer or the same as the file in this archive, skip this step.
+
+6. Copy the remaining files from the archive to the folder that has your existing copy of NetLoadModule.  Replace any existing files.
+
+7. Restart Litestep or log back in to your regular user account.
+
+----------

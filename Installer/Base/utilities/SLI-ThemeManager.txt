@@ -1,0 +1,29 @@
+*-----------------------------------------------------------------------------*
+
+    SLI Theme Manager v2.0 Introduction
+
+*-----------------------------------------------------------------------------*
+
+ Requirements:
+ **************
+ 
+ A (probably unofficial) OTS3 Installation or
+ LOSI x.x or
+ Omars Litestep Installer 3.0.2 or
+ A other, fully OTS2 compatible, Litestep Installer
+ 
+ 
+ Installation:
+ **************
+ 
+ Simply copy SLI-ThemeManager.exe in "$LitestepDir$Utilities\".
+ Run it.
+ 
+ 
+ ReadMe:
+ ********
+ 
+ Open the last Tab in SLI-ThemeManager for more details.
+ 
+ 
+  

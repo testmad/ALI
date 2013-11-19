@@ -1,0 +1,113 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    LiteStep 0.24.8
+    Changelog
+    
+    Copyright (c) 2009 The LiteStep Development Team
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+-- CHANGES SINCE 0.24.7 --------------------------------------------------------
+
+ - New combined evaluation parser for If/ElseIf and inline $a+b$ expressions.
+   Supports string comparisons and built-in functions among other improvements.
+
+ - Added checks for recursively defined variables to VarExpansionEx.
+
+ - Fixed threading/reentrant crash in MessageManager.
+
+ - Updates for Notification Icon Handler (systray service).
+   * Fixed non persistent data from always being retained.
+   * Fixed always sending NID data as new/updated when it wasn't.
+     (Fixes bogus info/balloon tips on recycle)
+   * Fixed possible internal data corruption by rouge systray modules.
+   * Fixed "dead icons" from being sent to systray modules on recycle.
+   * Added basic "shared icon" tracking.
+
+ - Removed !gather bang command proxy for VWM modules (all current VWM modules
+   now implement that function internally).
+
+ - Fixed ParseCmdLine's szRcPath creation from inserting an extra backslash.
+
+ - Much improved initialization/recycle of LSAPI internals.
+
+ - Added support for "AppBars". Appbars are windows that dock to the side of
+   the screen, some of which "autohide".  Typical uses are Media Player's
+   navigation bars, or Instant Messenger's contact list window.  Appbars may
+   also cause the work area to be changed.
+
+ - Changed bang !alert messagebox caption to "!Alert LiteStep" to make apparent
+   what generated the messagebox.
+
+ - Changed bang !confirm messagebox caption to "!Confirm LiteStep" to make
+   apparent what generated the messagebox.
+
+ - Fixed error handling when encountering invalid If/ElseIf syntax.
+
+ - Now checks for ElseIf following Else directive and skips conditional block
+   if this invalid structure occurs.
+
+ - Improved debug TRACE message output during step.rc parsing for debug builds.
+
+ - Default all platform variables (eg. "WinNT") to "false" prior to setting
+   conditional to "true".
+
+ - Added Win2003 platform variable.
+
+ - Added support for "Windows 2003" OS version string in the !about dialog's
+   System Information page.
+
+ - Fixed semicolon following ELSE or ENDIF statement from breaking parser.
+
+ - Command line !bang handler now allows running LS instance to set foreground
+   window.
+
+ - Fixed possible lockup condition on startup/recycle if there existed a non
+   responsive application on the desktop.
+
+ - Fixed !about bang command from launching concurrent AboutBox instances.
+
+ - Fixed LS logo not showing in about box. Moved logo to the left.
+
+ - The compile date is now fetched from PE header.
+
+ - $CompileDate$ now has the full "Compiled on" string as shown in the !about
+   box.
+
+ - Now using DeferWindowPos in Show/Hide/ToggleModules bang commands.  This
+   allows for "apparent" instant showing/hiding of all module windows.
+
+ - Greatly improved LSAutoHideModules support.  It now correctly detects any
+   full screen application on the primary monitor correctly and hides or shows
+   all modules accordingly (when it is enabled).
+
+ - Added a more specific error message when failing to load a module because of
+   unresolved dependencies.
+
+ - Fixed several Startup Runner issues.
+
+ - Fixed the Step.rc Evaluation Parser's abs() function from converting the
+   input to an integer.  Now abs(-1.23) will return 1.23 instead of 1.
+
+ - Fixed LiteStep from shutting down too early if an application blocks the
+   shutdown process which would leave the user with an empty desktop.
+
+ - Fixed !about dialog's font display under Windows 95.
+
+ - Fixed several API bugs: NULL paramater crash in RemoveBangCommand() and
+   invalid message format for LM_GETMINRECT and LM_APPCOMMAND.
+
+ - Updated German language strings.
+
+ - Updated the !about dialog's System Information page to show >2GB of memory
+   statistics if needed and to show partial gigabytes.
+
+ - Fixed hook.dll implementation.
+
+ - Added LiteStep version resource information to hook.dll.
+
+ - Brought the VC7.1 and MinGW build files up to date.
+
+ - Targeting libpng 1.2.35 and zlib 1.2.3.
+
+ - Many other incremental fixes and code cleanup changes... Thanks for reading.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
