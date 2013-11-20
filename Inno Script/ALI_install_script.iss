@@ -128,6 +128,7 @@ Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\RCDoc.ico"; DestDir: "{app}\
 Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\SetShellExplorer.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
 Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI\SetShellLS.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
 Source: "C:\Users\testmad\Desktop\ALI\Installer\ALI_ls.ico"; DestDir: "{app}\ALI"; Flags: ignoreversion
+Source: "C:\Users\testmad\Desktop\ALI\Installer\psvince.dll"; DestDir: "{app}\ALI"; Flags: dontcopy
 
 [Registry]
 Root: "HKLM"; Subkey: "Software\LOSI"; ValueType: none; Flags: uninsdeletekey
@@ -144,15 +145,34 @@ Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: dword; Va
 Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: string; ValueName: "ThemesDir"; ValueData: "{app}\Profiles\{username}\themes\"; Flags: uninsdeletevalue
 
 [Code]
+  function IsModuleLoaded(modulename: AnsiString): Boolean;
+  external 'IsModuleLoaded@files:psvince.dll stdcall';
+
+function InitializeSetup(): Boolean;
+begin
+
+  // check if litestep is running
+  if IsModuleLoaded( 'litestep.exe' ) then
+  begin
+    MsgBox( 'LiteStep is currently running.' + #13#13 + 'Please switch your shell to Explorer.',
+             mbError, MB_OK );
+    Result := false;
+  end
+  else Result := true;
+end;
+
 var
   VCwarnPage: TOutputMsgWizardPage;
-  
+
 procedure InitializeWizard;
 begin
+
+
+
   VCwarnPage:=CreateOutputMsgPage(wpWelcome,
   'LiteStep Requirements', 'Please read the following important information before continuing.',
   'LiteStep requires the following files:' + #13#13#13#13 + '          Microsoft Visual C++ 2005 Runtimes' + #13 + '          Microsoft Visual C++ 2005 SP1 Runtimes' + #13 + '          Microsoft Visual C++ 2010 SP1 Runtimes' + #13 + '          Micorsoft Visual C++ 2012 Runtimes' + #13 + '          Microsoft Visual C++ 2013 Runtimes' + #13#13#13#13 + 'They will be downloaded and installed automatically.');
-              
+
 //  idpAddFile('http://download.microsoft.com/download/d/3/4/d342efa6-3266-4157-a2ec-5174867be706/vcredist_x86.exe', ExpandConstant('{tmp}\vcredist_2005_x86.exe'));
 //  idpAddFile('http://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe', ExpandConstant('{tmp}\vcredist_2005sp1_x86.exe'));
 
