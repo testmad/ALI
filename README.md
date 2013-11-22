@@ -14,7 +14,7 @@ Write a new application for setting up evars that is run after install and can b
 
 Add check in installer for evars setup application.
 
-Write a new shell switcher.
+Write a new shell switcher.  DONE.
 
 
 Possible in the future:
