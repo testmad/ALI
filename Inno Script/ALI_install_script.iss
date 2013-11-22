@@ -133,6 +133,7 @@ Source: "C:\Users\testmad\Desktop\ALI\Installer\psvince.dll"; DestDir: "{app}\AL
 [Registry]
 Root: "HKLM"; Subkey: "Software\LOSI"; ValueType: none; Flags: uninsdeletekey
 Root: "HKLM"; Subkey: "Software\LOSI\Installer"; ValueType: string; ValueName: "LitestepDir"; ValueData: "{app}"; Flags: uninsdeletekeyifempty uninsdeletevalue
+Root: "HKLM"; Subkey: "Software\LOSI\Installer"; ValueType: string; ValueName: "LitestepArch"; ValueData: "32bit"; Flags: uninsdeletekeyifempty uninsdeletevalue
 Root: "HKCU"; Subkey: "Software\Litestep"; ValueType: none; Flags: uninsdeletekey
 Root: "HKCU"; Subkey: "Software\Litestep\SLI"; ValueType: none; Flags: uninsdeletekey
 Root: "HKCU"; Subkey: "Software\Litestep\SLI\ModuleManager"; ValueType: none; Flags: uninsdeletekey
@@ -154,7 +155,7 @@ begin
   // check if litestep is running
   if IsModuleLoaded( 'litestep.exe' ) then
   begin
-    MsgBox( 'LiteStep is currently running.' + #13#13 + 'Please switch your shell to Explorer.',
+    MsgBox( 'LiteStep is currently running.' + #13#13 + 'Please switch your shell to Explorer.exe.',
              mbError, MB_OK );
     Result := false;
   end
