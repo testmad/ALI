@@ -1,7 +1,10 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=ShellSwitch.ico
-#AutoIt3Wrapper_Outfile=ShellSwitch.exe
+#AutoIt3Wrapper_Outfile=..\ShellSwitch.exe
 #AutoIt3Wrapper_UseUpx=n
+#AutoIt3Wrapper_Res_Description=ShellSwitch
+#AutoIt3Wrapper_Res_Fileversion=0.0.0.1
+#AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #cs ----------------------------------------------------------------------------
 
