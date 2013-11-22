@@ -1,8 +1,7 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=..\..\..\Switch_button.ico
-#AutoIt3Wrapper_Outfile=SetShell.exe
+#AutoIt3Wrapper_Icon=ShellSwitch.ico
+#AutoIt3Wrapper_Outfile=ShellSwitch.exe
 #AutoIt3Wrapper_UseUpx=n
-#AutoIt3Wrapper_Add_Constants=n
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #cs ----------------------------------------------------------------------------
 

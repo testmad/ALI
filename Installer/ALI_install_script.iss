@@ -144,6 +144,7 @@ Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: none; Fla
 Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: string; ValueName: "LitestepDir"; ValueData: "{app}\"; Flags: uninsdeletevalue
 Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: dword; ValueName: "SecurityTimeout"; ValueData: "2"; Flags: uninsdeletevalue
 Root: "HKCU"; Subkey: "Software\Litestep\SLI\ThemeManager"; ValueType: string; ValueName: "ThemesDir"; ValueData: "{app}\Profiles\{username}\themes\"; Flags: uninsdeletevalue
+Root: "HKLM"; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Winlogon"; ValueType: dword; ValueName: "AutoRestartShell"; ValueData: "1"; Flags: uninsdeletevalue
 
 [Code]
   function IsModuleLoaded(modulename: AnsiString): Boolean;
