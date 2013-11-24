@@ -1,5 +1,11 @@
 -ShellSwitch v0.0.3.2
 -
+-Switches shells between Explorer and LiteStep ONLY.  It is not a universal shell setting application.
+-
+-ShellSwitch is meant to be installed with ALI, however, it can work without being installed by ALI.
+-ShellSwitch is compatible on both 32-bit and 64-bit versions of Windows.
+-Windows Vista or higher required.
+-
 -24/11/13 - 0.3.2
 -
 -Added first run check and warning of setting keys to defaults.
