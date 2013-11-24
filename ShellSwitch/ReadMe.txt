@@ -1,0 +1,14 @@
+-ShellSwitch v0.0.3.2
+-
+-24/11/13 - 0.3.2
+-
+-Added first run check and warning of setting keys to defaults.
+-Added in a lot of checking for proper keys. If set wrong or missing, ShellSwitch will set to defaults.
+-Added a few more msgboxes for specific scenarios.
+-Added checks to determine the LS Path, and if not existing, be able to locate the litestep.exe for setting the LiteStepDir reg key.
+-
+-Note: Thanks goes out to Greywool on this update.  In his highly sleep deprived state, some things he said brought to mind certain situations where ShellSwitch would fail or even worse, destroy the registry.
+-
+-22/11/13 - 0.0.1
+-
+-First compile of ShellSwitch
