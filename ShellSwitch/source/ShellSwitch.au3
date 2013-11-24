@@ -25,6 +25,7 @@ AutoItSetOption("TrayIconHide", 1)
 #include <WindowsConstants.au3>
 #include <Array.au3>
 
+
 Global $RegReadError1 = "Unable to open requested key."
 Global $RegReadError2 = "Unable to open requested main key."
 Global $RegReadError3 = "Unable to remote connect to the registry."
@@ -34,6 +35,13 @@ Global $RegReadError5 = "Value type not supported."
 Global $RunBefore = ""
 Global $LS_Path
 Global $CurrentUserShell = ""
+
+If _IsWindowsVersion() Then
+
+Else
+	MsgBox(4096, "Error", "ShellSwitch was intended for Windows Vista or higher.")
+	Exit
+EndIf
 
 $RunBefore = RegRead ( "HKEY_LOCAL_MACHINE\Software\LOSI\Installer", "SSBefore" ) ;Check if ShellSwitch was installed by ALI.
 If @error Then
@@ -217,5 +225,9 @@ Func formatGet($gString)
 		EndIf
 	EndIf
 	Return $temp
+EndFunc
+
+Func _IsWindowsVersion()
+    Return RegRead('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\', 'CurrentVersion') >= 6.0
 EndFunc
 
