@@ -1,10 +1,10 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.8.1
- Author:         myName
+ Author:         testmad
 
  Script Function:
-	Template AutoIt script.
+	Provide an easy way to update evars.rc
 
 #ce ----------------------------------------------------------------------------
 
